@@ -1,0 +1,522 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+ul{
+    list-style: none;
+}
+
+/* @@@@@@@@@@@@@@@@@@@@( Header )@@@@@@@@@@@@@@@@@@@@ */
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 2px 20px;
+    box-shadow: 0px -1px 4px rgb(95 95 95);
+    z-index: 1000;
+}
+
+.middle_menu .icon{
+    width: 120px;
+    height: 45px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+}
+
+.active{
+    border-bottom: 3px solid #0675e8;
+}
+
+.icon:hover{
+    background-color: rgb(232, 236, 238);
+}
+
+.icon i{
+    font-size: 26px;
+}
+
+.circle_icon{
+    width: 40px;
+    height: 40px;
+    background-color: rgb(232, 236, 238);
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+}
+
+.circle_icon i{
+    font-size: 17px;
+}
+
+.circle_icon:hover{
+    background-color: rgb(217, 220, 221);
+}
+
+header ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul li{
+    margin: 4px;
+}
+
+header .user_profile{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 30px;
+    width: 100px;
+    padding: 3px 12px 3px 3px;
+    margin-right: 6px;
+}
+
+header .user_profile:hover{
+    background-color: rgb(212, 213, 214);
+}
+
+.user_profile img{
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+}
+
+.user_profile .fName{
+    font-weight: 500;
+    color: rgb(29, 29, 29);
+}
+
+.left_menu{
+    display: flex;
+    /* justify-content: center;
+    align-items: center; */
+    flex-direction: row;
+    /* background-color: red; */
+}
+
+.middle_menu{
+    /* background-color: green; */
+}
+
+.right_menu{
+    /* background-color: blue; */
+}
+
+.left_menu .logo{
+    width: 40px;
+    height: 40px;
+    background-color: #0675e8;
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 6px;
+}
+
+.left_menu .logo i{
+    color: white;
+    font-size: 24px;
+}
+
+.left_menu .search i{
+    position: relative;
+    right: 240px;
+    color: rgb(85, 85, 85);
+}
+
+.left_menu input{
+    width: 250px;
+    font-size: 18px;
+    background-color: rgb(232, 236, 238);
+    outline: none;
+    border: none;
+    padding: 8px 15px 8px 38px;
+    border-radius: 30px;
+}
+
+/* @@@@@@@@@@@@@@@@@@( Main Body and Left Right Column )@@@@@@@@@@@@@@@@@@ */
+.main_body{
+    display: flex;
+    flex-flow: row wrap;
+    background-color: rgb(240, 242, 245);
+	/* padding: 0 20px; */
+	padding-top: 66px;
+}
+
+.left_col{
+	/* background-color: burlywood; */
+	position: fixed;
+	left: 0;
+	width: 300px;
+	height: 90vh;
+	overflow-y: scroll;
+    padding-left: 20px;
+	/* flex: 0 0 300px; */
+}
+
+.left_col::-webkit-scrollbar{
+	width: 8px;
+}
+
+.left_col::-webkit-scrollbar-thumb{
+	background-color: rgb(202, 205, 207);
+	border-radius: 30px;
+	visibility: hidden;
+}
+
+.left_col:hover::-webkit-scrollbar-thumb{
+	visibility: visible;
+}
+
+.right_col::-webkit-scrollbar{
+	width: 8px;
+}
+
+.right_col::-webkit-scrollbar-thumb{
+	background-color: rgb(202, 205, 207);
+	border-radius: 30px;
+	visibility: hidden;
+}
+
+.right_col:hover::-webkit-scrollbar-thumb{
+	visibility: visible;
+}
+
+.middle_col{
+	flex: 1 0 auto;
+}
+
+
+/* @@@@@@@@@@@@@@@@@@( Sidebar )@@@@@@@@@@@@@@@@@@ */
+.sidebar{
+    padding-top: 10px;
+}
+
+.sidebar .nav_item{
+    width: 100%;
+    padding: 8px 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.sidebar .nav_item:hover{
+    background-color: rgb(212, 217, 219);
+}
+
+.nav_item i{
+    font-size: 22px;
+    margin-right: 8px;
+}
+
+.sidebar .user_profile{
+    padding: 10px 10px;
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+}
+
+.sidebar .user_profile:hover{
+    background-color: rgb(212, 217, 219);
+}
+
+.sidebar .user_profile img{
+    margin-right: 18px;
+}
+
+.sidebar .user_profile span{
+    font-weight: 600;
+}
+
+
+/* @@@@@@@@@@@@@@@@@@( Contacts Right Column )@@@@@@@@@@@@@@@@@@ */
+.right_col{ 
+	position: fixed;
+	right: 0;
+	width: 300px;
+	height: 90vh;
+	overflow-y: scroll;
+	padding-top: 8px;
+}
+
+.right_col .header{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 6px 10px;
+}
+
+.right_col .header .icons{
+    display: flex;
+    justify-content: space-between;
+}
+
+.right_col .header .title{
+    font-size: 18px;
+    font-weight: 600;
+    color: #6a6c71;
+}
+
+.right_col .header .icon{
+    width: 30px;
+    height: 30px;
+    /* background-color: rgb(232, 236, 238); */
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+    font-size: 20px;
+    cursor: pointer;
+    margin: 0 4px;
+}
+
+.right_col .header .icon:hover{
+    background-color: rgb(212, 216, 218);
+}
+
+.right_col .contact{
+    padding: 8px 8px;
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.right_col .contact:hover{
+    background-color: rgb(212, 217, 219);
+}
+
+.right_col .contact_box span{
+    font-weight: 600;
+}
+
+.right_col .contact_box img{
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+    margin-right: 10px;
+}
+
+
+/* @@@@@@@@@@@@@@@@@@( Stories Middle Column )@@@@@@@@@@@@@@@@@@ */
+.middle_col .stories{
+    position: relative;
+    max-width: 570px;
+    height: 180px;
+    margin: auto;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    margin: 20px auto;
+}
+
+.middle_col .right_arrow{
+    position: absolute;
+    top: 70px;
+    right: -20px;
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+    background-color: yellow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgb(117, 117, 117);
+    background-color: rgb(240, 242, 245);
+    cursor: pointer;
+}
+
+/* .middle_col .left_arrow{
+    position: absolute;
+    top: 70px;
+    left: -20px;
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+    background-color: yellow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgb(117, 117, 117);
+    background-color: rgb(240, 242, 245);
+} */
+
+.middle_col .story{
+    width: 110px;
+    height: 100%;
+    border-radius: 10px;
+    background-color: green;
+    overflow: hidden;
+}
+
+.middle_col .story img{
+    height: 100%;
+}
+
+
+
+/* @@@@@@@@@@@@@@@@@@( Post Styling )@@@@@@@@@@@@@@@@@@ */
+.post{
+    max-width: 500px;
+    margin: 20px auto;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 1px 1px 4px 1px rgba(46, 46, 46, 0.438);
+}
+
+.post_header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 16px;
+}
+
+.post_header img{
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    margin-right: 8px;
+}
+
+.user_profile_container{
+    display: flex;
+}
+
+
+
+.post_header .user_name{
+    font-weight: 600;
+}
+
+.post_header .post_date{
+    font-size: 14px;
+    color: gray;
+}
+
+.post_image_box{
+    width: 100%;
+    height: 100%;
+}
+
+.post_image_box img{
+    width: 100%;
+    height: 100%;
+}
+
+.post_reaction_box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 0;
+    margin: 0 16px;
+}
+
+.action_box{
+    margin: 0 16px;
+}
+
+.action_menu{
+    display: flex;
+    justify-content: space-between;
+    padding: 6px 0;
+}
+
+.action_menu li{
+    width: 33%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    padding: 6px 36px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.action_menu li:hover{
+    background-color: rgb(232, 236, 238);
+}
+
+
+/* @@@@@@@@@@@@@@@@@@( Create Status Styling )@@@@@@@@@@@@@@@@@@ */
+.status{
+    display: flex;
+}
+
+.status_box{
+    max-width: 500px;
+    margin: 20px auto;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 1px 1px 4px 1px rgba(46, 46, 46, 0.438);
+    padding: 12px;
+}
+
+.status_box .status img{
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    margin-right: 8px;
+}
+
+.status_box .status input{
+    width: 100%;
+    height: 40px;
+    font-size: 17px;
+    padding: 15px;
+    border-radius: 50px;
+    border: none;
+    outline: none;
+    background-color: rgb(233, 230, 230);
+}
+
+.activities{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.activity i{
+    font-size: 20px;
+    margin-right: 2px;
+}
+
+.activity span{
+    color: rgb(94, 92, 92);
+    font-weight: 600;
+}
+
+.activity{
+    padding: 8px 18px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.activity:hover{
+    background-color: rgb(245, 239, 239);
+}
+
+
+

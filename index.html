@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/248b31097f.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Facebook Clone</title>
+</head>
+
+<body>
+
+    <!-- Body Color = #f0f2f5   rgb(240, 242, 245) -->
+
+    <div class="container">
+        <!-- Container Start -->
+
+        <!-- Header Start -->
+        <header>
+            <div class="left_menu">
+                <div class="logo">
+                    <i class="fab fa-facebook-f"></i>
+                </div>
+                <div class="search">
+                    <input type="text" placeholder="Search Facebook">
+                    <i class="fas fa-search"></i>
+                </div>
+            </div>
+
+            <ul class="middle_menu">
+                <li class="active"><a href="#" class="icon"><i class="fas fa-home"></i></a></li>
+                <li><a href="#" class="icon"><i class="fas fa-users"></i></a></li>
+                <li><a href="#" class="icon"><i class="fab fa-youtube"></i></a></li>
+                <li><a href="#" class="icon"><i class="fas fa-gamepad"></i></a></li>
+            </ul>
+
+            <ul class="right_menu">
+                <a href="#" class="user_profile">
+                    <img src="images/user_avatar.jpg" alt="">
+                    <span class="fName">Jawad</span>
+                </a>
+                <li><a href="#" class="circle_icon"><i class="fas fa-th"></i></a></li>
+                <li><a href="#" class="circle_icon"><i class="fab fa-facebook-messenger"></i></a></li>
+                <li><a href="#" class="circle_icon"><i class="fas fa-bell"></i></a></li>
+                <li><a href="#" class="circle_icon"><i class="fas fa-caret-down"></i></a></li>
+            </ul>
+        </header>
+        <!-- Header End -->
+
+
+        <div class="main_body">
+
+            <div class="left_col sidebar">
+                <a href="#" class="user_profile">
+                    <img src="images/user_avatar.jpg" alt="">
+                    <span>Jawad Shah</span>
+                </a>
+                <ul>
+                    <li class="nav_item">
+                        <i class="fas fa-home"></i>
+                        <a href="#">Friends</a>
+                    </li>
+                    <li class="nav_item">
+                        <i class="fas fa-users"></i>
+                        <a href="#">Groups</a>
+                    </li>
+                    <li class="nav_item">
+                        <i class="fas fa-store"></i>
+                        <a href="#">Marketplace</a>
+                    </li>
+                    <li class="nav_item">
+                        <i class="fas fa-photo-video"></i>
+                        <a href="#">Watch</a>
+                    </li>
+                    <li class="nav_item">
+                        <i class="far fa-clock"></i>
+                        <a href="#">Memories</a>
+                    </li>
+                    <li class="nav_item">
+                        <i class="fas fa-chevron-down"></i>
+                        <a href="#">More</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="middle_col">
+
+                <div class="stories">
+                    <!-- <div class="left_arrow">
+                        <i class="fas fa-arrow-left"></i>
+                    </div> -->
+                    <div class="right_arrow">
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+                    <div class="story"><img src="images/user_avatar.jpg" alt=""></div>
+                    <div class="story"><img src="images/user_avatar.jpg" alt=""></div>
+                    <div class="story"><img src="images/user_avatar.jpg" alt=""></div>
+                    <div class="story"><img src="images/user_avatar.jpg" alt=""></div>
+                    <div class="story"><img src="images/user_avatar.jpg" alt=""></div>
+                </div>
+
+                <div class="status_box">
+                    <div class="status">
+                        <img src="images/user.png" alt="User">
+                        <input type="text" name="status_text" id="status_text" placeholder="What's on your mind, Ali?">
+                    </div>
+                    <hr style="margin: 10px 0; border: 1px solid rgb(241, 238, 238);">
+                    <div class="activities">
+                        <div class="activity" id="activity1">
+                            <!-- #f02849 -->
+                            <span><i style="color: #f02849;" class="fas fa-video"></i></span>
+                            <span>Live Video</span>
+                        </div>
+                        <div class="activity" id="activity1">
+                            <!-- #45bd62 -->
+                            <span><i style="color: #45bd62;" class="far fa-images"></i></span>
+                            <span>Photo/Video</span>
+                        </div>
+                        <div class="activity" id="activity1">
+                            <!-- #f7b928 -->
+                            <span><i style="color: #f7b928;" class="far fa-grin"></i></span>
+                            <span>Feeling/Activity</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="post">
+                    <div class="post_header">
+                        <div class="user_profile_container">
+                            <img src="images/user_avatar.jpg" alt="User">
+                            <div class="post_detail">
+                                <div class="user_name">Jawad Shah</div>
+                                <div class="post_date">October 8 at 12:31 PM</div>
+                            </div>
+                        </div>
+                        <div class="menu_icon">
+                            <i class="fas fa-ellipsis-h"></i>
+                        </div>
+                    </div>
+                    <div class="post_text"></div>
+                    <div class="post_image_box">
+                        <img src="images/car.jpg" alt="">
+                    </div>
+                    <div class="post_footer">
+                        <div class="post_reaction_box">
+                            <div class="likes">
+                                <i class="fas fa-thumbs-up" style="color: #0675e8;"></i>
+                                <i class="fas fa-surprise" style="color: rgb(194, 197, 7);"></i>
+                                <i class="fas fa-heart" style="color: red;"></i>
+                                <span id="likeCount">56</span>
+                            </div>
+
+                            <div class="comments">
+                                22 Comments
+                            </div>
+
+                        </div>
+
+                        <hr style="margin: 0 16px; border: 1px solid rgb(233 223 223);">
+
+                        <div class="action_box">
+                            <ul class="action_menu">
+                                <li class="like_btn" onclick="likePost()">
+                                    <i class="far fa-thumbs-up"></i>
+                                    <div>Like</div>
+                                </li>
+                                <li class="comment_btn" onclick="commentPost()">
+                                    <i class="far fa-comment-alt"></i>
+                                    <div>Comment</div>
+                                </li>
+                                <li class="share_btn" onclick="sharePost()">
+                                    <i class="fas fa-share"></i>
+                                    <div>Share</div>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- <hr style="margin: 0 16px; border: 1px solid rgb(199 197 197);"> -->
+                    </div>
+                </div>
+
+                <div class="post">
+                    <div class="post_header">
+                        <div class="user_profile_container">
+                            <img src="images/user_avatar.jpg" alt="User">
+                            <div class="post_detail">
+                                <div class="user_name">Jawad Shah</div>
+                                <div class="post_date">October 8 at 12:31 PM</div>
+                            </div>
+                        </div>
+                        <div class="menu_icon">
+                            <i class="fas fa-ellipsis-h"></i>
+                        </div>
+                    </div>
+                    <div class="post_text"></div>
+                    <div class="post_image_box">
+                        <img src="images/People_Faces2.jpg" alt="">
+                    </div>
+                    <div class="post_footer">
+                        <div class="post_reaction_box">
+                            <div class="likes">
+                                <i class="fas fa-thumbs-up" style="color: #0675e8;"></i>
+                                <i class="fas fa-surprise" style="color: rgb(194, 197, 7);"></i>
+                                <i class="fas fa-heart" style="color: red;"></i>
+                                <span id="likeCount">56</span>
+                            </div>
+
+                            <div class="comments">
+                                22 Comments
+                            </div>
+
+                        </div>
+
+                        <hr style="margin: 0 16px; border: 1px solid rgb(233 223 223);">
+
+                        <div class="action_box">
+                            <ul class="action_menu">
+                                <li class="like_btn" onclick="likePost()">
+                                    <i class="far fa-thumbs-up"></i>
+                                    <div>Like</div>
+                                </li>
+                                <li class="comment_btn" onclick="commentPost()">
+                                    <i class="far fa-comment-alt"></i>
+                                    <div>Comment</div>
+                                </li>
+                                <li class="share_btn" onclick="sharePost()">
+                                    <i class="fas fa-share"></i>
+                                    <div>Share</div>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- <hr style="margin: 0 16px; border: 1px solid rgb(199 197 197);"> -->
+                    </div>
+                </div>
+
+                <div class="post">
+                    <div class="post_header">
+                        <div class="user_profile_container">
+                            <img src="images/user_avatar.jpg" alt="User">
+                            <div class="post_detail">
+                                <div class="user_name">Jawad Shah</div>
+                                <div class="post_date">October 8 at 12:31 PM</div>
+                            </div>
+                        </div>
+                        <div class="menu_icon">
+                            <i class="fas fa-ellipsis-h"></i>
+                        </div>
+                    </div>
+                    <div class="post_text"></div>
+                    <div class="post_image_box">
+                        <img src="images/car.jpg" alt="">
+                    </div>
+                    <div class="post_footer">
+                        <div class="post_reaction_box">
+                            <div class="likes">
+                                <i class="fas fa-thumbs-up" style="color: #0675e8;"></i>
+                                <i class="fas fa-surprise" style="color: rgb(194, 197, 7);"></i>
+                                <i class="fas fa-heart" style="color: red;"></i>
+                                <span id="likeCount">56</span>
+                            </div>
+
+                            <div class="comments">
+                                22 Comments
+                            </div>
+
+                        </div>
+
+                        <hr style="margin: 0 16px; border: 1px solid rgb(233 223 223);">
+
+                        <div class="action_box">
+                            <ul class="action_menu">
+                                <li class="like_btn" onclick="likePost()">
+                                    <i class="far fa-thumbs-up"></i>
+                                    <div>Like</div>
+                                </li>
+                                <li class="comment_btn" onclick="commentPost()">
+                                    <i class="far fa-comment-alt"></i>
+                                    <div>Comment</div>
+                                </li>
+                                <li class="share_btn" onclick="sharePost()">
+                                    <i class="fas fa-share"></i>
+                                    <div>Share</div>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- <hr style="margin: 0 16px; border: 1px solid rgb(199 197 197);"> -->
+                    </div>
+                </div>
+
+
+
+            </div>
+            <div class="right_col">
+                <div class="header">
+                    <div class="title">Contacts</div>
+                    <div class="icons">
+                        <span class="material-icons icon">
+                            video_call
+                        </span>
+                        <span class="material-icons icon">
+                            search
+                        </span>
+                        <i class="fas fa-ellipsis-h icon"></i>
+                    </div>
+                </div>
+                <div class="contact_box">
+                    <div href="#" class="contact">
+                        <img src="images/user1.jpg" alt="">
+                        <span>Jawad Shah</span>
+                    </div>
+                    <div href="#" class="contact">
+                        <img src="images/user3.jpg" alt="">
+                        <span>Jawad Shah</span>
+                    </div>
+                    <div href="#" class="contact">
+                        <img src="images/user4.jpg" alt="">
+                        <span>Jawad Shah</span>
+                    </div>
+                    <div href="#" class="contact">
+                        <img src="images/user5.jpg" alt="">
+                        <span>Marry James</span>
+                    </div>
+                    <div href="#" class="contact">
+                        <img src="images/user6.jpg" alt="">
+                        <span>Harry Clinton</span>
+                    </div>
+                    <div href="#" class="contact">
+                        <img src="images/user7.jpg" alt="">
+                        <span>John Smith</span>
+                    </div>
+                    <div href="#" class="contact">
+                        <img src="images/user8.webp" alt="">
+                        <span>Jawad Shah</span>
+                    </div>
+                    <div href="#" class="contact">
+                        <img src="images/user.png" alt="">
+                        <span>Jawad Shah</span>
+                    </div>
+                    <div href="#" class="contact">
+                        <img src="images/user1.jpg" alt="">
+                        <span>Jawad Shah</span>
+                    </div>
+                    <div href="#" class="contact">
+                        <img src="images/user4.jpg" alt="">
+                        <span>Jawad Shah</span>
+                    </div>
+                    <div href="#" class="contact">
+                        <img src="images/user6.jpg" alt="">
+                        <span>Jawad Shah</span>
+                    </div>
+                    <div href="#" class="contact">
+                        <img src="images/user7.jpg" alt="">
+                        <span>Jawad Shah</span>
+                    </div>
+                    <div href="#" class="contact">
+                        <img src="images/user4.jpg" alt="">
+                        <span>Jawad Shah</span>
+                    </div>
+                    <div href="#" class="contact">
+                        <img src="images/user1.jpg" alt="">
+                        <span>Jawad Shah</span>
+                    </div>
+                    <div href="#" class="contact">
+                        <img src="images/user3.jpg" alt="">
+                        <span>Jawad Shah</span>
+                    </div>
+                    <div href="#" class="contact">
+                        <img src="images/user.png" alt="">
+                        <span>Jawad Shah</span>
+                    </div>
+                    <div href="#" class="contact">
+                        <img src="images/user4.jpg" alt="">
+                        <span>Jawad Shah</span>
+                    </div>
+                    <div href="#" class="contact">
+                        <img src="images/user5.jpg" alt="">
+                        <span>Jawad Shah</span>
+                    </div>
+                    <div href="#" class="contact">
+                        <img src="images/user3.jpg" alt="">
+                        <span>Jawad Shah</span>
+                    </div>
+                    <div href="#" class="contact">
+                        <img src="images/user7.jpg" alt="">
+                        <span>Jawad Shah</span>
+                    </div>
+                    <div href="#" class="contact">
+                        <img src="images/user5.jpg" alt="">
+                        <span>Jawad Shah</span>
+                    </div>
+                    <div href="#" class="contact">
+                        <img src="images/user6.jpg" alt="">
+                        <span>Jawad Shah</span>
+                    </div>
+                    <div href="#" class="contact">
+                        <img src="images/user3.jpg" alt="">
+                        <span>Jawad Shah</span>
+                    </div>
+                    <div href="#" class="contact">
+                        <img src="images/user3.jpg" alt="">
+                        <span>Jawad Shah</span>
+                    </div>
+                    <div href="#" class="contact">
+                        <img src="images/user6.jpg" alt="">
+                        <span>Jawad Shah</span>
+                    </div>
+                    </div>
+                </div>
+                
+            </div>
+
+
+        </div>
+        <!-- Container End -->
+    </div>
+
+
+
+    <script>
+        const like_btn = document.querySelector('.like_btn');
+        const comment_btn = document.querySelector('.comment_btn');
+        const share_btn = document.querySelector('.share_btn');
+
+        var postLiked = postShared = postCommented = false;
+        var likeCount = document.querySelector('#likeCount').innerHTML
+
+        // Like a Post
+        function likePost() {
+            if (!postLiked) {
+                like_btn.style.color = "#0675e8";
+                like_btn.style.fontWeight = "700";
+                likeCount++;
+                document.querySelector('#likeCount').innerHTML = likeCount;
+                postLiked = true;
+            } else {
+                like_btn.style.color = "black";
+                like_btn.style.fontWeight = "400";
+                likeCount--;
+                document.querySelector('#likeCount').innerHTML = likeCount;
+                postLiked = false;
+            }
+        }
+
+        // Comment a Post
+        function commentPost() {
+            if (!postCommented) {
+                comment_btn.style.color = "#0675e8";
+                comment_btn.style.fontWeight = "700";
+                postCommented = true;
+            } else {
+                comment_btn.style.color = "black";
+                comment_btn.style.fontWeight = "400";
+                postCommented = false;
+            }
+        }
+
+        // Share a Post
+        function sharePost() {
+            if (!postShared) {
+                share_btn.style.color = "#0675e8";
+                share_btn.style.fontWeight = "700";
+                postShared = true;
+            } else {
+                share_btn.style.color = "black";
+                share_btn.style.fontWeight = "400";
+                postShared = false;
+            }
+        }
+
+    </script>
+
+
+</body>
+
+</html>
